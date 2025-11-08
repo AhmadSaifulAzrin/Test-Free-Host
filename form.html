@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borang Maklum Balas</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark text-light"> 
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> 
+        </nav>
+    <main class="container pt-5 mt-3" style="max-width: 700px;">
+        <form>
+            </form>
+    </main>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top"> 
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Jejak Makanan</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Utama</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="form.html">Borang</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container pt-5 mt-3" style="max-width: 700px;">
+        
+        <h1 class="my-4 text-center text-secondary">Hantar Maklum Balas</h1>
+        <p class="text-center">Kami hargai komen anda tentang warisan makanan Malaysia!</p>
+        
+        <form>
+            
+            <div class="bg-danger p-3 mb-4 rounded-3">
+                <label for="nama_penuh" class="form-label">Nama Penuh Anda</label>
+                <input type="text" class="form-control" id="nama_penuh" placeholder="Cth: Ahmad Bin Ali" required>
+            </div>
+            
+            <div class="bg-danger p-3 mb-4 rounded-3">
+                <label for="email_anda" class="form-label">Alamat Email (Wajib)</label>
+                <input type="email" class="form-control" id="email_anda" placeholder="nama@contoh.com" required>
+            </div>
+            
+            <div class="bg-danger p-3 mb-4 rounded-3">
+                <label for="makanan_favorite" class="form-label">Makanan Warisan Kegemaran</label>
+                <select class="form-select" id="makanan_favorite" required>
+                    <option selected disabled value="">Pilih satu...</option>
+                    <option value="nasi_lemak">Nasi Lemak</option>
+                    <option value="laksa">Laksa</option>
+                    <option value="kuih">Kuih Muih Tradisional</option>
+                    <option value="lain">Lain-lain</option>
+                </select>
+            </div>
+
+            <div class="bg-danger p-3 mb-4 rounded-3">
+                <label class="form-label d-block">Adakah Aplikasi Ini Membantu?</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="membantu" id="radio_ya" value="ya" required>
+                    <label class="form-check-label" for="radio_ya">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="membantu" id="radio_tidak" value="tidak">
+                    <label class="form-check-label" for="radio_tidak">Tidak</label>
+                </div>
+            </div>
+
+            <div class="bg-danger p-3 mb-4 rounded-3">
+                <label class="form-label d-block">Komponen Yang Paling Anda Suka:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="gambar" id="check_gambar">
+                    <label class="form-check-label" for="check_gambar">
+                        Gambar Berkualiti
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="peta" id="check_peta">
+                    <label class="form-check-label" for="check_peta">
+                        Peta Interaktif
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-danger p-3 mb-4 rounded-3">
+                <label for="komen_anda" class="form-label">Komen dan Cadangan (Maks 200 patah perkataan)</label>
+                <textarea class="form-control" id="komen_anda" rows="3"></textarea>
+            </div>
+
+            <div class="bg-danger p-3 mb-4 rounded-3">
+                <label for="tarikh_lawat" class="form-label">Tarikh Maklum Balas Dihantar</label>
+                <input type="date" class="form-control" id="tarikh_lawat">
+            </div>
+
+            <button type="submit" class="btn btn-secondary btn-lg w-100 mb-5">Hantar Borang</button>
+
+        </form>
+
+    </main>
+
+    <footer class="bg-light text-center py-3 mt-5 border-top">
+        © 2025 Borang Maklum Balas
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

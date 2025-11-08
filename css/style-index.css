@@ -1,0 +1,70 @@
+/* Tetapan Asas (Reset) */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #e6c85d; /* Latar Belakang Cerah */
+}
+
+/* Header/Navbar Tetap di Bahagian Atas */
+.app-header {
+    background-color: #163f75; /* Warna Merah Menyala/Tradisional */
+    color: white;
+    padding: 15px 10px;
+    text-align: center;
+    position: sticky; /* Boleh juga guna fixed jika mahu */
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.app-nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.app-nav a {
+    color: rgb(245, 249, 244);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* Kontena Kandungan Utama untuk Mobile-First */
+.content-container {
+    padding: 20px;
+    /* Pastikan kandungan tidak terlalu lebar pada desktop */
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+/* Imej Responsif (Wajib untuk mobile) */
+.hero-image {
+    width: 100%; /* Imej sentiasa ambil lebar penuh skrin */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Styling List Item (Tanpa Bootstrap) */
+.food-list {
+    list-style: none;
+    padding: 0;
+}
+
+.food-list li {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.food-list a {
+    text-decoration: none;
+    color: #333;
+    display: block; /* Supaya seluruh li boleh diklik */
+    font-weight: 600;
+}

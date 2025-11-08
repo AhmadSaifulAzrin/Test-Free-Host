@@ -1,0 +1,44 @@
+/* style-about.css: (Sambungan dari gaya index.css, tetapi fokus pada Table) */
+
+/* Guna semula gaya header/footer/container dari style-index.css */
+/* ... (Gaya sedia ada untuk .app-header, .content-container, dll.) ... */
+
+/* --------------------------------------------- */
+/* Gaya Manual untuk Jadual (Table) */
+/* --------------------------------------------- */
+.project-table {
+    width: 100%;
+    border-collapse: collapse; /* Hilangkan jarak antara border */
+    margin: 20px 0;
+    font-size: 0.9em;
+    min-width: 400px; /* Pastikan ia cukup lebar untuk menunjukkan scroll */
+}
+
+.project-table thead tr {
+    background-color: #333; /* Latar Belakang Gelap */
+    color: white;
+    text-align: left;
+}
+
+.project-table th, 
+.project-table td {
+    padding: 12px 15px;
+    border: 1px solid #1620d8;
+}
+
+/* Garis Zebra (untuk memudahkan pembacaan) */
+.project-table tbody tr:nth-child(even) {
+    background-color: #d4ec1d;
+}
+
+/* Responsive Table (Horizontal Scroll) */
+/* Ini adalah cara CSS Sahaja untuk table-responsive Bootstrap */
+.table-wrapper {
+    overflow-x: auto; /* Membenarkan skrol mendatar jika jadual terlalu lebar */
+}
+
+/* Gaya untuk <span> Wajib */
+.highlight {
+    color: #C0392B; /* Warna Merah Garang kamu */
+    font-weight: bold;
+}
